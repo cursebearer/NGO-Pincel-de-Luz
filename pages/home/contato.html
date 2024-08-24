@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Contato - Pincel De Luz</title>
+    <link rel="icon" type="image/x-icon" href="/icon.svg">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a3834070a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/home/styles.css">
+    <link rel="stylesheet" href="/styles/home/contato.css">
+</head>
+
+<body>
+    <header id="header">
+        <script src="/scripts/home/view/header.js"></script>
+    </header>
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Sugestões ou dúvidas?</h2>
+                <h3 class="destaque">Entre em contato</h3>
+            </div>
+            <input class="form-input input-transition" type="text" placeholder="Nome*" id="nome" title="Nome" required>
+            <input class="form-input input-transition" type="email" placeholder="Email*" id="email" title="Email"
+                required>
+            <input class="form-input input-transition" type="text" placeholder="Assunto" id="assunto" title="Assunto"
+                required>
+            <textarea class="form-textarea input-transition" placeholder="Mensagem" rows="5" title="Mensagem"
+                id="mensagem" required></textarea>
+            <button class="form-button" id="enviarEmail">Enviar</button>
+        </div>
+    </div>
+    <script type="module" src="/scripts/home/view/footer.js"></script>
+    <script type="module" src="/scripts/home/api/createMensagem.js"></script>
+</body>
+
+</html>

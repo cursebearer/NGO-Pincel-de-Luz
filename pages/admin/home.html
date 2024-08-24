@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="/scripts/auth/validadeAccess.js" type="module"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Home - Pincel De Luz -Admin</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a3834070a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/admin/general.css">
+    <link rel="stylesheet" href="/styles/admin/post.css">
+</head>
+
+<body>
+    <header id="header">
+        <script type="module" src="/scripts/admin/view/header.js"></script>
+    </header>
+    <h2 class="form-title inner-shadow display-5">ADICIONAR POSTAGENS</h2>
+    <div class="container">
+        <section class="my-5">
+            <form id="createPostForm" class="form">
+                <section class="form-post__text">
+                    <div class="form-post__text--input input-group mb-3">
+                        <span class="input-group-text d-none d-sm-block">Título</span>
+                        <input id="title" type="text" class="form-control" placeholder="Título" aria-label="Título">
+                    </div>
+                    <div class="form-post__text--input input-group mb-3">
+                        <span class="input-group-text d-none d-sm-block">Link Externo</span>
+                        <input id="url" type="url" class="form-control" placeholder="URL">
+                    </div>
+                    <div class="form-post__text--input form-post__text--select">
+                        <select name="category" id="category" class="form-select w-100">
+                            <option value="0" selected>Categoria</option>
+                            <option value="1">Postagem</option>
+                            <option value="2">Transparencia</option>
+                            <option value="3">Ação</option>
+                        </select>
+                    </div>
+                </section>
+                <div class="row mt-5">
+                    <div class="col-md-10 d-flex justify-content-center">
+                        <div class="form-post__legenda">
+                            <label for="legenda">*Legenda/Descrição</label>
+                            <textarea class="form-textarea" name="legenda" id="legenda" cols="30" rows="10"
+                                placeholder="Legenda da postagem"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" id="submit_post">Criar Postagem</button>
+            </form>
+        </section>
+    </div>
+    <h2 class="form-title inner-shadow display-5">MINHAS POSTAGENS</h2>
+    <section class="container" id="secao-postagens">
+    </section>
+    <script type="module" src="/scripts/admin/view/loadPosts.js"></script>
+    <script type="module" src="/scripts/admin/controller/createPost.js"></script>
+    <script type="module" src="/scripts/admin/controller/deletePost.js"></script>
+</body>
+
+</html>

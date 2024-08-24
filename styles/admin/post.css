@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(75deg, #fff, #e3e3e3);
+}
+
+.form {
+    padding: 25px 0 100px 0;
+}
+
+.form-title {
+    font-weight: bold;
+    background: #F05B29;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.form-post__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-post__text--input {
+    margin: 0 15px;
+}
+
+.form-post__text--select {
+    width: 100%;
+}
+
+.form-post__legenda {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.form-textarea {
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+.form-post__images--icon {
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 200ms;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+
+}
+
+.form-post__images--icon:hover {
+    color: #fff;
+    background: #1393ca;
+    margin-right: 15px;
+}
+
+#submit_post {
+    color: #fff;
+    background: #1393ca;
+    display: block;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 auto;
+    transition: all 200ms;
+}
+
+#submit_post:hover {
+    background: #0e6990;
+}
+
+/* MINHAS POSTAGENS */
+.postagem {
+    margin: 25px 0;
+    padding: 15px;
+    border: 2px solid #ccc;
+    transition: border 200ms;
+}
+
+.postagem:hover {
+    border: 2px solid #000;
+}
+
+.postagem-dados {
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.postagem-dados__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postagem-dados__header--titulo {
+    font-weight: bold;
+}
+
+.postagem-dados__header--categoria {
+    font-size: 1.2em;
+    color: #F05B29;
+}
+
+.postagem-dados__body--link {
+    color: #F05B29;
+    text-decoration: none;
+}
+
+.postagem-dados__body--link:hover {
+    color: #cb4d23;
+    text-decoration: underline;
+}
+
+.postagem-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.postagem-imagens__imagem {
+    margin: 5px 5px;
+    height: 200px;
+    width: 250px;
+}
+
+.postagem-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.postagem-menu__form {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.postagem-menu__botao {
+    width: 100px;
+    margin: 0 15px;
+}
+
+
+@media(max-width: 991.98px) {
+    .form-post__text {
+        flex-direction: column;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}

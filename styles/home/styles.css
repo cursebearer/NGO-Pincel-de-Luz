@@ -1,0 +1,157 @@
+* {
+    font-family: 'Urbanist';
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    height: 100%;
+}
+
+.inner-shadow {
+    box-shadow: inset 1px 1px 8px #333333;
+}
+
+.header {
+    background: #f7f7f7;
+    height: 128px;
+}
+
+.header-container {
+    height: 100%;
+}
+
+.header-icon {
+    height: 110px;
+}
+
+.header-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu__item {
+    margin-right: 15px;
+}
+
+.header-menu__link {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    transition: all;
+    transition-duration: 100ms;
+}
+
+.header-menu__link:hover {
+    color: #1393CA;
+    text-decoration: underline;
+}
+
+.header-button__link {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    background-color: #1393ca;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.header-button__link:hover {
+    color: white;
+    background-color: #1380af;
+}
+
+.footer {
+    width: 100%;
+    background: #F05B29;
+    height: 100px;
+}
+
+.footer-menu__link {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    color: #fff;
+    transition: all;
+    transition-duration: 100ms;
+    display: inline-block;
+}
+
+.footer-menu__link:hover {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-menu__item {
+    padding: 5px;
+    margin: 5px 15px;
+}
+
+.footer-menu__link--rede {
+    margin-left: 5px;
+}
+
+@media (max-width: 575.98px) {
+    .header-menu {
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .header-menu__link {
+        padding: 5px 15px;
+        border-radius: 3px;
+        margin-bottom: 3px;
+    }
+
+    .header-menu__link:hover {
+        color: #fff;
+        background-color: #F05B29;
+        text-decoration: none;
+    }
+
+    .header-menu__link--active {
+        color: #fff;
+        background-color: #F05B29;
+    }
+
+    .footer-menu__link {
+        margin: 5px 0px;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .footer-menu__link--rede {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}

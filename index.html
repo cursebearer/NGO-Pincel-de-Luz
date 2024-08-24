@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - Pincel De Luz</title>
+    <link rel="icon" type="image/x-icon" href="/icon.svg">
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/home/styles.css">
+    <link rel="stylesheet" href="/styles/home/home.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a3834070a4.js" crossorigin="anonymous"></script>
+    <script type="module" src="/scripts/home/view/home.js"></script>
+    <script type="module" crossorigin src="/assets/index-B5Qt9EMX.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <script type="module" src="/scripts/home/view/header.js" defer></script>
+    </header>
+    <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carrossel text-white">
+            <div class="carousel-item active carrossel-item carrossel-item__contribua" style="background-color: black">
+                <div class="carrossel-item__inner">
+                    <h2 class="carrossel-item__title">Doações</h2>
+                    <p>Você também tem o desejo genuíno de ajudar pessoas?</p>
+                    <a href="/pages/home/contribua.html"
+                        class="carrossel-item__botao carrossel-item__contribua--botao">CONTRIBUA AGORA</a>
+                </div>
+            </div>
+            <div class="carousel-item carrossel-item carrossel-item__acoes text-white">
+                <div class="carrossel-item__inner">
+                    <h2 class="carrossel-item__title">Ações</h2>
+                    <p>Deseja acompanhar nosso trabalho?</p>
+                    <a href="/pages/home/acoes.html" class="carrossel-item__botao carrossel-item__acoes--botao">NOSSAS
+                        POSTAGENS</a>
+                </div>
+            </div>
+            <div class="carousel-item carrossel-item carrosel-item__contato text-white">
+                <div class="carrossel-item__inner">
+                    <h2 class="carrossel-item__title">Contato</h2>
+                    <p>Sugestões ou dúvidas?</p>
+                    <a href="/pages/home/contato.html"
+                        class="carrossel-item__botao carrossel-item__contato--botao">ENTRE EM CONTATO</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Fim Carossel-->
+    <div class="p-5 text-center inner-shadow">
+        <h1 class="titulo-sobre">Quem Somos</h1>
+    </div>
+    <article class="sobre">
+        <div class="sobre-bg">
+            <div class="sobre-texto">
+                <p id="quem_somos">A partir do desejo de um grupo de amigos, a ONG Pincel de Luz tem como objetivo
+                    investir em ações sociais para apoiar a formação de jovens e crianças.
+                    Fundada em 13.10.2015 com um único desejo no coração: Contribuir com um
+                    mundo melhor.
+                    Após muitos encontros, firmou-se que trabalhar com crianças seria uma bela forma de começar.
+                    E
+                    assim, hoje, com quase 9 anos, nos sentimos muito gratos em poder olhar pra trás e ter a
+                    certeza
+                    de que estamos fazendo isso.</p>
+            </div>
+        </div>
+    </article>
+    <section class="postagens inner-shadow">
+        <div class="container">
+            <h2 class="postagens-titulo"><i class="fa-brands fa-instagram fa-xl"></i> Confira Nossas Últimas Postagens
+            </h2>
+            <section class="postagens-posts" id="secao-postagens">
+            </section>
+            <button type="button" class="postagens-botao" id="load-post">Carregar Mais</button>
+        </div>
+    </section>
+    <script type="module" src="/scripts/home/view/footer.js"></script>
+    <script type="module" src="/scripts/home/view/loadText.js"></script>
+    <script type="module" src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

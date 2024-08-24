@@ -1,0 +1,82 @@
+html, body, .container-fluid, .row, .coluna,.login,.carrossel,.carousel-inner,.carousel-item{
+    height: 100%;
+}
+.col-md-4, .col-md-8, .col-md-6, .col-lg-8{
+    padding: 0;
+}
+.carrossel-item{
+    background-position: center;
+    background-size: cover;
+}
+.carrossel-item--1{
+    background-image: url('../../img/home/carrossel/carrossel1.jpg');
+}
+.carrossel-item--2{
+    background-image: url('../../img/home/carrossel/carrossel2.jpg');
+}
+.carrossel-item--3{
+    background-image: url('../../img/home/carrossel/carrossel3.png');
+}
+.carrossel-item__background{
+    height: 100%;
+    width: 100%;
+}
+.carrossel-item__background--1{
+    background: linear-gradient(125deg,#0d648ac5,#1393ca71);
+}
+.carrossel-item__background--2{
+    background: linear-gradient(125deg,#f05b2900,#f05b2983);
+}
+.carrossel-item__background--3{
+    background: linear-gradient(125deg,#f05b2991,#0d648ac5);
+}
+.login{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-area__form{
+    display: flex;
+    flex-direction: column;
+}
+.formulario-logo{
+    width: 180px;
+    padding: 15px;
+    border-radius: 75%;
+    background: #F7F7F7;
+    transition: all 250ms;
+}
+.formulario-logo:hover{
+    padding: 30px;
+    box-shadow: 0px 0px 10px #F05B29;
+}
+.login-area_form--legend{
+    text-align: center;
+    font-size: 1em;
+    margin: 25px 0px;
+    padding: 10px;
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #F7F7F7;
+    border-radius: 7px;
+}
+.login-area_form--button{
+    margin: 15px 0;
+}
+.input-group {
+    position: relative;
+    padding: 10px 0;
+}
+.invalid-feedback {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    font-size: 0.875em;
+    visibility: hidden;
+}

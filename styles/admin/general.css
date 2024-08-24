@@ -1,0 +1,100 @@
+* {
+    font-family: 'Urbanist';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    background: linear-gradient(45deg, #1F6A8A, #36B8F0);
+    height: 166px;
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    width: 106px;
+    height: 102px;
+    border-radius: 75%;
+    background: #F7F7F7;
+    transition: all 250ms;
+
+}
+
+.header-icon:hover {
+    padding: 15px;
+    box-shadow: 0px 0px 15px #F05B29;
+}
+
+.header-name {
+    font-size: 25px;
+    text-shadow: 0 4px 2px #0000006b;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 30px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.header-menu__button {
+    color: #fff;
+    background: #F05B29;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    transition: all 200ms;
+}
+
+.header-menu__button:hover {
+    background: #c34b23;
+}
+
+.header-button__link {
+    border-radius: 15px;
+    padding: 8px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background: #1F6A8A;
+    transition: all 200ms;
+
+}
+
+.header-button__link:hover {
+    color: #fff;
+    background: #164c63;
+}
+
+.input-group {
+    position: relative;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .header-name {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .header-menu__link {
+        width: 100%;
+    }
+
+    .header-menu__button {
+        margin: 5px 10px;
+    }
+
+    .header-button__link {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 991.98px) {}

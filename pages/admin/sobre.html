@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="/scripts/auth/validadeAccess.js" type="module"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sobre - Pincel De Luz -Admin</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a3834070a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/admin/general.css">
+    <link rel="stylesheet" href="/styles/admin/sobre.css">
+</head>
+
+<body>
+    <header id="header">
+        <script type="module" src="/scripts/admin/view/header.js"></script>
+    </header>
+    <div class="container main-container">
+        <div class="row">
+            <form action="post" class="form">
+                <div class="row">
+                    <div class="col-md-6 content">
+                        <h2 class="page-title title__principal display-5 border-hover ">Quem Somos</h2>
+                        <label for="sobre" class="form-control label-text">Escreva aqui</label>
+                        <textarea name="sobre" id="sobre" class="textarea border-text "></textarea>
+                    </div>
+                    <div class="col-md-6 desc">
+                        <h2 class="page-title display-5 border-hover ">O que colocar?</h2>
+                        <p class="text-desc border-hover ">
+                            Na seção <span class="destaque">Sobre Nós</span>, você pode compartilhar informações
+                            essenciais sobre o
+                            projeto. É o
+                            lugar ideal para contar a história por trás da sua iniciativa,
+                            desde sua fundação até seus objetivos atuais. Inclua detalhes sobre sua missão, visão e
+                            valores. Essa seção não apenas informa, mas também ajuda a estabelecer confiança e
+                            conexão com seus visitantes, mostrando a <span class="destaque">autenticidade</span> e o
+                            <span class="destaque">propósito</span> por trás da sua ONG.
+                        </p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="salvar" class="button button-save">Salvar</button>
+                    <button type="button" id="descartar" class="button button-discard">Descartar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="/scripts/admin/view/sobre.js"></script>
+</body>
+
+</html>

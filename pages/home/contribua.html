@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contribua - Pincel De Luz</title>
+    <link rel="icon" type="image/x-icon" href="/icon.svg">
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a3834070a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/home/styles.css">
+    <link rel="stylesheet" href="/styles/home/contribua.css">
+    <script>
+        function copiarTexto() {
+            const texto = "23.804.574/0001-18";
+
+            const inputTemp = document.createElement("input");
+            inputTemp.value = texto;
+            document.body.appendChild(inputTemp);
+
+            inputTemp.select();
+            inputTemp.setSelectionRange(0, 99999);
+
+            document.execCommand("copy");
+
+            document.body.removeChild(inputTemp);
+
+            alert("CNPJ copiado para a área de transferência!");
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <script src="/scripts/home/view/header.js"></script>
+    </header>
+    <div class="container">
+        <div class="doacao-container">
+            <div>
+                <h1 class="title">
+                    Você está doando para a <span class="destaque">ONG Pincel de Luz</span>
+                </h1>
+                <span class="destaque">"Sonhos se renovam todos os dias"</span>
+            </div>
+            <div class="row">
+                <div class="doacao-secao">
+                    <div class="cnpj-section">
+                        <div><img style="margin: 50px 0;" src="/img/images.png" alt=""></div>
+                        <div class="cnpj box-shadow" onclick="copiarTexto()" title="Copiar CNPJ"><span
+                                class="cnpj-label">CNPJ - </span> <span class="cnpj-content">23.804.574/0001-18</span></div>
+                    </div>
+                    <div class="contact-area">
+                        <h3 class="title">Estamos abertos para <span class="destaque">sugestões</span> ou <span
+                                class="destaque">dúvidas</span>.</h3>
+                        <a class="contato__botao" href="/pages/home/contato.html">Contato</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script type="module" src="/scripts/home/view/footer.js"></script>
+</body>
+
+</html>

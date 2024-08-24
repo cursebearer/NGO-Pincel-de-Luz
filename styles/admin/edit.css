@@ -1,0 +1,47 @@
+body {
+    background: #e6e6e6;
+}
+
+.decartar {
+    text-decoration: none;
+    color: #fff;
+}
+
+.decartar:hover {
+    color: #fff;
+}
+
+
+.form-textarea {
+    width: 50%;
+    height: 200px;
+}
+
+.main-container {
+    margin-top: 70px;
+    background: #fff;
+    box-shadow: 0px 0px 20px #353535;
+    padding: 30px 20px;
+}
+
+.form-title {
+    padding: 5px;
+    color: #F05B29;
+}
+
+.input-post {
+    padding: 10px;
+}
+
+.form-select {
+    width: 50%;
+}
+
+.input-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.input-buttons .btn {
+    margin: 0 10px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - Pincel De Luz</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a3834070a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/admin/general.css">
+    <link rel="stylesheet" href="/styles/admin/autenticar.css">
+    <script src="/scripts/auth/account.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="coluna d-none d-md-block col-md-6 col-xl-8">
+                <div id="carrossel" class="carrossel carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carrossel-item--1 carrossel-item carousel-item">
+                            <div class="carrossel-item__background carrossel-item__background--1"></div>
+                        </div>
+                        <div class="carrossel-item--2 carrossel-item carousel-item">
+                            <div class="carrossel-item__background carrossel-item__background--2"></div>
+                        </div>
+                        <div class="carrossel-item--3 carrossel-item carousel-item active">
+                            <div class="carrossel-item__background carrossel-item__background--3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coluna col-md-6 col-xl-4">
+                <div class="login">
+                    <section class="login-area">
+                        <a href="/index.html"><img src="/img/icon_ong.jpg" alt="ONG Pincel de Luz"
+                                class="formulario-logo"></a>
+                        <form id="login-form" class="login-area__form">
+                            <fieldset>
+                                <legend class="login-area_form--legend">Autenticar Administrador</legend>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                    <input id="email" type="email" class="form-control" placeholder="E-Mail"
+                                        aria-label="email" required>
+                                    <div id="email-invalid" class="invalid-feedback">Email inválido.</div>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                                    <input id="password" type="password" class="form-control" placeholder="Senha"
+                                        aria-label="password" required>
+                                    <div id="password-required" class="invalid-feedback">Campo obrigatório.</div>
+                                </div>
+                                <div id="error-message" class="text-danger mt-3" style="visibility: hidden;">Login ou
+                                    senha incorretos.</div>
+                                <div id="loading-spinner" class="text-center mt-3" style="visibility: hidden;">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <button id="submit-email" type="submit" class="login-area_form--button btn btn-primary">
+                                Autenticar</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

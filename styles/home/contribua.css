@@ -1,0 +1,75 @@
+.doacao-container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.3em;
+}
+
+.cnpj-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cnpj {
+    padding: 20px;
+    border: 1px solid #ffffff00;
+    color: #F05B29;
+    transition: all 200ms;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+}
+
+.cnpj:hover {
+    transform: scale(1.1);
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+
+.cnpj-content {
+    padding: 15px;
+    background: #F05B29;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contato__botao {
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    transition: all 200ms;
+    cursor: pointer;
+    background: #F05B29;
+}
+
+.contato__botao:hover {
+    color: #fff;
+    background: #ce4e23;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #F05B29;
+}
+
+.ong-icon {
+    width: 150px;
+    border-radius: 75%;
+}
+
+.contact-area {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
